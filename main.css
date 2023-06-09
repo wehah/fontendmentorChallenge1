@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Roboto-regular;
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("assets/fonts/Roboto-Bold.ttf");
+}
+
+body {
+    background-color:  hsl(234, 29%, 20%);
+    font-family: Roboto-regular;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+   
+   
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    background-color: white;
+    height: 700px;
+    width: 100%;
+    max-width: 1440px;
+    border-radius: 20px;
+    margin: 100px  auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    color: hsl(234, 29%, 20%);
+   
+}
+
+.infoCont{
+    width:55%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-left: 20px;
+
+}
+
+.container h1 {
+    font-family: Roboto-Bold;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.infoCont p{
+    font-family: Roboto-regular;
+    font-size: 16px;
+    padding: 0;
+    margin-top: 0px;
+    
+    
+}
+
+
+.infoCont svg {
+    padding-right: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align:sub;
+    padding-left: 0;
+}
+
+
+
+
+.infoCont h2, h3 {
+    font-size: 13px;
+    font-family: Roboto-regular;
+}
+
+.emailtext {
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoCont .errorText{
+    color: hsl(4, 100%, 67%);
+    opacity: 0;
+}
+
+.errorMode {
+    color:hsl(4, 100%, 67%);
+    background-color: hsl(4, 100%, 67%, 0.3);
+    border: 1px solid hsl(4, 100%, 67%);
+}
+
+.infoCont .formInput {
+    width: 58%;
+    height: 50px;
+    border: 1px solid hsl(234, 29%, 20%, 40%);
+    border-radius: 5px;
+    font-family: Roboto-regular;
+    font-size: 16px;
+    box-sizing: border-box
+    
+}
+
+.container h3 {
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    width: 58%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+
+.imgCont{
+    height: 100%;
+    width: 45%;
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.success{
+background-color: white;
+max-width: 360px;
+position:absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 20px;
+padding: 20px;
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+box-sizing: border-box;
+opacity: 0;
+}
+
+.success svg {
+    width: 40px;
+    height: 40px;
+    vertical-align:top;
+    margin: 10px;
+}
+
+.success h1,.success p, .success h3 {
+    margin: 10px;
+}
+
+.success h3 { width: 95%;}
+
+.attribution {
+    padding: 0;
+    margin: 0 auto;
+    color: white;
+    
+}
+.attribution a { text-decoration: none; color: yellow;}
+
+
+
+    /*----------------------------------------------*/
+    /*----------------------------------------------*/
+                /* mobile section */
+   /*----------------------------------------------*/
+   /*----------------------------------------------*/
+ 
+   @media screen and (max-width: 375px) {
+
+
+  
+    .container {
+      max-width: 375px;
+      margin: 0 auto;
+    }
+  
+    .main {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+      margin: auto;
+    }
+  
+    .main > * {
+      width: 100%;
+    }
+  
+    .imgCont {
+      background-image: url(assets/images/illustration-sign-up-mobile.svg);
+      background-size: cover;
+    }
+  
+    .infoCont {
+      align-self: center;
+      width: 90%;
+    }
+
+    .infoCont .formInput , .infoCont h3 {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .success {
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        padding: 150px 20px 20px 20px;
+        box-sizing: border-box;
+        gap:20px;
+        
+    }
+
+    .success h3 {
+        position: absolute;
+        bottom: 20px;
+        width: 80%;
+    }
+
+    .success svg {
+        width: 60px;
+        height: 60px;
+    }
+  
+    .attribution {
+      display: none;
+    }
+  }
+  
